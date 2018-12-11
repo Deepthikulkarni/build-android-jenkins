@@ -19,6 +19,6 @@ node {
     echo "Building flavor Dolos"
     
     //build your gradle flavor, passes the current build number as a parameter to gradle
-    sh "./Dolos/gradlew --stacktrace -PBUILD_NUMBER=${env.BUILD_NUMBER}"
+    sh "./gradlew --stacktrace -PBUILD_NUMBER=${env.BUILD_NUMBER}"
   }
 }
